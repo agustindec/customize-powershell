@@ -44,10 +44,21 @@ Se va a utilizar las fuentes de [Nerd Fonts](https://www.nerdfonts.com/font-down
 
 Descargamos el archivo comprimido, vamos a las configuraciones con `Win` + `i`. Buscamos ajustes de fuente e instalamos la fuente descargada.
 
-Agregar la configuración dentro del JSON del perfil.
+Agregar la configuración dentro del JSON del perfil (Ya con el tema seleccionado).
 
 ```
-
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\clean-detailed.omp.json" | Invoke-Expression
 ```
 
+## Agregar Icons
+
+Se va a utilizar PSGallery.
+
+En la consola se debe ejecutar lo siguiente:
+
+```bash
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+Import-Module -Name Terminal-Icons
+```
 
